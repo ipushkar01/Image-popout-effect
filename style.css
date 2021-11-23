@@ -33,6 +33,7 @@ body {
 
 .imgContainer:hover img{
     transform: scale(1.4);
+    cursor: pointer;
 }
 
 .imgContainer:hover{
