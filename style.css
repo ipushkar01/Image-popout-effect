@@ -1,0 +1,51 @@
+body {
+    background-color: #131313;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    filter: grayscale(100%);
+    background-color: #363636;
+    transition: all .3s;
+}
+
+.imgContainer img{
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    transform-origin: bottom;
+    transition: transform .3s ;
+}
+
+.wrapper{
+    display: flex;
+    gap: 60px;
+}
+
+.imgContainer:hover img{
+    transform: scale(1.4);
+}
+
+.imgContainer:hover{
+    filter: grayscale(0);
+}
+
+.imgContainer:first-child:hover {
+    background-color: #f6b911;
+}
+
+.imgContainer:nth-child(2):hover {
+    background-color: #b0b1b4;
+}
+.imgContainer:last-child:hover {
+    background-color: #355cb1;
+}
